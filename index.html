@@ -9,7 +9,33 @@
     <link rel="stylesheet" href="./css/utilities.css">
     <link href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet" type="text/css"/>
     <link rel="icon" href="./img/facicon.png" type="image/x-icon"/>
-    <script src="script.js"></script>
+    <script>
+        function decrement(){
+            var number = document.getElementById('cart-items').innerHTML;
+            var stock=document.getElementById('stock').innerHTML;
+            document.getElementById('stock').innerHTML=stock-number;
+            document.getElementById('cart-items').innerHTML=0;
+        }
+        function addone(){
+            var number = document.getElementById('cart-items').innerHTML;
+            var stock=document.getElementById('stock').innerHTML;
+            if(number<stock){
+                console.log(number)
+                number++;
+                console.log(number)
+                document.getElementById('cart-items').innerHTML=number;
+            }
+            else if(number<9){
+                window.alert("only "+ stock + " left in stock , sorry");
+            }
+            else{window.alert("you bought too much if you want to reset the cart- press on the cart icon");}
+        }
+        function reset(){
+            var number = document.getElementById('cart-items').innerHTML;
+            number=0;
+            document.getElementById('cart-items').innerHTML=number;
+        }
+    </script>
     <title>Amaon.com: L.O.L Surprise Doll</title>
 </head>
 <body>
@@ -52,7 +78,7 @@
             </div>
             <div class="cart btn flex-center">
                 <div class="sprite4"> 
-                    <p id="cart-items">0</p>
+                    <h1 id="cart-items" onclick="reset()">0</h1>
                 </div>
                 <h4 class="headerh4">Cart</h4>
             </div>
@@ -188,7 +214,7 @@
                             <a href="#">Deliver to israel</a>
                         </div>
                         <div>
-                            <p class="p-special"><span class="red-text"> Only 2 left in stock - order soon.</span></p> 
+                            <p class="p-special"><span class="red-text"> Only <span id="stock">2</span>  left in stock - order soon.</span></p> 
                         </div>
                         <div>
                             <select>
@@ -198,7 +224,7 @@
                             </select>
                         </div>
                         <div><button id="add-to-cart" onclick="addone()" >Add to Cart</button></div>
-                        <div><button class="buy-btn2">Buy Now</button></div>
+                        <div><button class="buy-btn2" id="buy-now" onclick="decrement()">Buy Now</button></div>
                         <div class="flex-center left">
                             <div class="sprite7"></div>
                             <a href="#">Secure transaction</a>
@@ -319,5 +345,6 @@
             </div>
         </div>
     </div>
+    
 </body>
 </html>

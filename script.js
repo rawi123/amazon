@@ -1,7 +1,9 @@
-let number = document.getElementById('cart-items');
 
-let btn = document.getElementById('add-to-cart');
 function addone(){
-    console.log(number)
+    let number = document.getElementById('cart-items');
+    // number = document.getElementById('cart-items');
+    console.log(number ,'asdasd')
     number=10;
+    console.log(number,'numberrr');
+    #cart-items=23;
 }
