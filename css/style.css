@@ -28,6 +28,7 @@ header{
 	background: url('../img/header\ sprite.png') no-repeat -10px -340px;
 	width: 38px;
 	height: 26px;
+    position: relative;
 }
 .head .deliver-to{
     width: 5.5vw;
@@ -466,4 +467,14 @@ header{
 }
 .karosela a{
     font-size: 1.36rem;
+}
+#cart-items{
+    background: none;
+    border: none;
+    color: #F08804;
+    width: 3rem;
+    top: -40%;
+    left: 40%;
+    font-size: 2.2rem;
+    position: absolute;
 }

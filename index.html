@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/utilities.css">
     <link href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet" type="text/css"/>
     <link rel="icon" href="./img/facicon.png" type="image/x-icon"/>
+    <script src="script.js"></script>
     <title>Amaon.com: L.O.L Surprise Doll</title>
 </head>
 <body>
@@ -50,7 +51,9 @@
                 <h4 class="headerh4">& Orders</h4>
             </div>
             <div class="cart btn flex-center">
-                <div class="sprite4"></div>
+                <div class="sprite4"> 
+                    <p id="cart-items">0</p>
+                </div>
                 <h4 class="headerh4">Cart</h4>
             </div>
         </div>
@@ -194,7 +197,7 @@
                                 <option value="2">2</option>
                             </select>
                         </div>
-                        <div><button>Add to Cart</button></div>
+                        <div><button id="add-to-cart" onclick="addone()" >Add to Cart</button></div>
                         <div><button class="buy-btn2">Buy Now</button></div>
                         <div class="flex-center left">
                             <div class="sprite7"></div>
