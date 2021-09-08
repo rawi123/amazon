@@ -1,0 +1,139 @@
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+@font-face {font-family: "Amazon Ember"; src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot"); src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff") format("woff"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember") format("svg"); }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family:"Amazon Ember";
+    overflow-x: hidden;
+}
+:root{
+    --primary-color:#FFA41C;
+}
+a{
+    text-decoration: none;
+    color:lightskyblue;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+a:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.p-special{
+    color: #565959;
+    font-size:1.4rem ;
+    line-height: 2rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+.p-special2{
+    color: #0f1111;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0.8rem 0.2rem;
+}
+.flex-column{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: .2rem;
+    height: 100%;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    justify-content: flex-start;
+}
+.between{
+    justify-content: space-between;
+}
+/* header btn- for border */
+.btn:hover{
+    cursor: pointer;
+    outline:1px solid #fff ;
+}
+/* header box for size */
+.header-box{
+    padding:0.6rem 0.3rem 0.6rem;  
+    cursor: pointer;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    border-radius: 0.2rem;
+}
+.header-box:first-child{
+    margin-left: 1.5rem;
+}
+.headerh4{
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-left: .2rem;
+}
+.headerh5{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    padding-left: .2rem;
+}
+/* sdecond header */
+.header2-box{
+    padding:  .5rem .8rem;
+    border-radius: .3rem;
+}
+.weight-300{
+    font-weight: 300;
+}
+.weight-600{
+    font-weight: 600;
+}
+/* third header */
+.btn3:hover{
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+.header3-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+/*  */
+.red-text{
+    color:#b12704;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.small{
+    font-size: 1.5rem;
+}
+.bold-text{
+    color: #565959;
+    font-weight: 700;
+}
+.p1{
+    padding: 1rem;
+}
+.p-0{
+    padding: 0;
+}
+.arrow-btn{
+    padding: 1.4rem;
+    background: #fff;
+    border: 1px solid #BCBEBE;
+    border-radius: 15px;
+    margin: 0 1rem;
+    cursor: pointer;
+
+}
